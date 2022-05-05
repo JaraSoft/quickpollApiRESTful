@@ -22,11 +22,11 @@ public class Poll {
     @Size(min = 2, max = 6)
     private Set<Option> options;
 
-    public Long getId() {
+    public Long getPollId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setPollId(Long id) {
         this.id = id;
     }
 
@@ -51,12 +51,12 @@ public class Poll {
         if (this == o) return true;
         if (!(o instanceof Poll)) return false;
         Poll poll = (Poll) o;
-        return getId().equals(poll.getId()) && getQuestion().equals(poll.getQuestion()) && getOptions().equals(poll.getOptions());
+        return getPollId().equals(poll.getPollId()) && getQuestion().equals(poll.getQuestion()) && getOptions().equals(poll.getOptions());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getQuestion(), getOptions());
+        return Objects.hash(getPollId(), getQuestion(), getOptions());
     }
 
     @Override
