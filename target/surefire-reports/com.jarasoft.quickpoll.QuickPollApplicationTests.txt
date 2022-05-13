@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.jarasoft.quickpoll.QuickPollApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.803 s - in com.jarasoft.quickpoll.QuickPollApplicationTests
